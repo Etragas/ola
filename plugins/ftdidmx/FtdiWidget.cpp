@@ -33,7 +33,7 @@
  */
 
 #include <strings.h>
-#include <ftdi.h>
+#include "ftdi.h"
 #include <assert.h>
 
 #include <string>
@@ -127,7 +127,7 @@ void FtdiWidget::Widgets(vector<FtdiWidgetInfo> *widgets) {
       ftdi_device_list* current_device = list;
 
       while (current_device != NULL) {
-        struct usb_device *dev = current_device->dev;
+        struct libusb_device *dev = current_device->dev;
         current_device = current_device->next;
         i++;
 

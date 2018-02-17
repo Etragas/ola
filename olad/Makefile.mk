@@ -73,7 +73,7 @@ olad_olad_LDADD = olad/libolaserver.la \
                   ola/libola.la
 
 if USE_FTDI
-olad_olad_LDADD += -lftdi -lusb
+olad_olad_LDADD += -lftdi -lusb-1.0
 endif
 
 # TESTS

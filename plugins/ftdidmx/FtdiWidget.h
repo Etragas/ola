@@ -35,7 +35,7 @@
 #ifndef PLUGINS_FTDIDMX_FTDIWIDGET_H_
 #define PLUGINS_FTDIDMX_FTDIWIDGET_H_
 
-#include <ftdi.h>
+#include "ftdi.h"
 #include <stdint.h>
 #include <string.h>
 
